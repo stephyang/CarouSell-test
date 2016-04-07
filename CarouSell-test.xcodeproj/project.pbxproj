@@ -12,6 +12,7 @@
 		75A2C5B31CB5FD69005DBADA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75A2C5B11CB5FD69005DBADA /* Main.storyboard */; };
 		75A2C5B51CB5FD69005DBADA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75A2C5B41CB5FD69005DBADA /* Assets.xcassets */; };
 		75A2C5B81CB5FD69005DBADA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75A2C5B61CB5FD69005DBADA /* LaunchScreen.storyboard */; };
+		75A2C5C01CB5FDC3005DBADA /* Registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75A2C5BF1CB5FDC3005DBADA /* Registration.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		75A2C5B41CB5FD69005DBADA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75A2C5B71CB5FD69005DBADA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75A2C5B91CB5FD69005DBADA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75A2C5BF1CB5FDC3005DBADA /* Registration.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Registration.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				75A2C5AD1CB5FD69005DBADA /* AppDelegate.swift */,
 				75A2C5AF1CB5FD69005DBADA /* ViewController.swift */,
 				75A2C5B11CB5FD69005DBADA /* Main.storyboard */,
+				75A2C5BF1CB5FDC3005DBADA /* Registration.storyboard */,
 				75A2C5B41CB5FD69005DBADA /* Assets.xcassets */,
 				75A2C5B61CB5FD69005DBADA /* LaunchScreen.storyboard */,
 				75A2C5B91CB5FD69005DBADA /* Info.plist */,
@@ -123,6 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75A2C5B81CB5FD69005DBADA /* LaunchScreen.storyboard in Resources */,
+				75A2C5C01CB5FDC3005DBADA /* Registration.storyboard in Resources */,
 				75A2C5B51CB5FD69005DBADA /* Assets.xcassets in Resources */,
 				75A2C5B31CB5FD69005DBADA /* Main.storyboard in Resources */,
 			);
