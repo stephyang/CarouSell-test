@@ -13,6 +13,9 @@
 		75A2C5B51CB5FD69005DBADA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75A2C5B41CB5FD69005DBADA /* Assets.xcassets */; };
 		75A2C5B81CB5FD69005DBADA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75A2C5B61CB5FD69005DBADA /* LaunchScreen.storyboard */; };
 		75A2C5C01CB5FDC3005DBADA /* Registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75A2C5BF1CB5FDC3005DBADA /* Registration.storyboard */; };
+		75A2C5C21CB605C9005DBADA /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A2C5C11CB605C9005DBADA /* Registration.swift */; };
+		75A2C5CD1CB60788005DBADA /* PageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A2C5CB1CB60788005DBADA /* PageCollectionViewCell.swift */; };
+		75A2C5CE1CB60788005DBADA /* PageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75A2C5CC1CB60788005DBADA /* PageCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		75A2C5B71CB5FD69005DBADA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75A2C5B91CB5FD69005DBADA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75A2C5BF1CB5FDC3005DBADA /* Registration.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Registration.storyboard; sourceTree = "<group>"; };
+		75A2C5C11CB605C9005DBADA /* Registration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
+		75A2C5CB1CB60788005DBADA /* PageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageCollectionViewCell.swift; sourceTree = "<group>"; };
+		75A2C5CC1CB60788005DBADA /* PageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PageCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +66,12 @@
 				75A2C5AF1CB5FD69005DBADA /* ViewController.swift */,
 				75A2C5B11CB5FD69005DBADA /* Main.storyboard */,
 				75A2C5BF1CB5FDC3005DBADA /* Registration.storyboard */,
+				75A2C5C11CB605C9005DBADA /* Registration.swift */,
 				75A2C5B41CB5FD69005DBADA /* Assets.xcassets */,
 				75A2C5B61CB5FD69005DBADA /* LaunchScreen.storyboard */,
 				75A2C5B91CB5FD69005DBADA /* Info.plist */,
+				75A2C5CB1CB60788005DBADA /* PageCollectionViewCell.swift */,
+				75A2C5CC1CB60788005DBADA /* PageCollectionViewCell.xib */,
 			);
 			path = "CarouSell-test";
 			sourceTree = "<group>";
@@ -125,6 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75A2C5CE1CB60788005DBADA /* PageCollectionViewCell.xib in Resources */,
 				75A2C5B81CB5FD69005DBADA /* LaunchScreen.storyboard in Resources */,
 				75A2C5C01CB5FDC3005DBADA /* Registration.storyboard in Resources */,
 				75A2C5B51CB5FD69005DBADA /* Assets.xcassets in Resources */,
@@ -140,7 +150,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				75A2C5B01CB5FD69005DBADA /* ViewController.swift in Sources */,
+				75A2C5C21CB605C9005DBADA /* Registration.swift in Sources */,
 				75A2C5AE1CB5FD69005DBADA /* AppDelegate.swift in Sources */,
+				75A2C5CD1CB60788005DBADA /* PageCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
