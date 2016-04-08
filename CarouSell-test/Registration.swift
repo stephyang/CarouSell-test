@@ -15,6 +15,8 @@ class Registration: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var tutorialCollectionView: UICollectionView!
     @IBOutlet weak var layout: UICollectionViewFlowLayout!
     @IBOutlet weak var pageControl: UIPageControl!
+    @IBOutlet weak var loginWithEmailButton: UIButton!
+    
     
     let pages = [[Constants.image: "photo1", Constants.title: "coffee", Constants.description: "I love itI love itI love itI love itI love itI love itI love itI love itI love itI love itI love itI love itI love itI love itI love itI love itI love itI love itI love itI love itI love it"],[Constants.image: "photo2", Constants.title: "work", Constants.description: "I love it"],[Constants.image: "photo3", Constants.title: "latte", Constants.description: "I love it"]]
    
@@ -28,6 +30,15 @@ class Registration: UIViewController, UIScrollViewDelegate {
         
         
         self.pageControl.numberOfPages = self.pages.count
+        
+        self.loginWithEmailButton.layer.cornerRadius = 5
+        
+        let buttontitle = NSMutableAttributedString(string: "Sign up or Log in with ")
+        let boldEmail = NSMutableAttributedString(string: "Email ", attributes:[NSFontAttributeName: UIFont.boldSystemFontOfSize(18.0)])
+        buttontitle.appendAttributedString(boldEmail)
+        self.loginWithEmailButton.setAttributedTitle(buttontitle, forState: .Normal)
+        
+        
     
     }
 // 讓每換一個畫面，pagecontrol下面的點會跟著移動（這是UIScrollViewDelegate 的func所以選告UIScrollViewDelegate完直接做）

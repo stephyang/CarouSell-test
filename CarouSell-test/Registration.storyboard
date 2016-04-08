@@ -8,7 +8,7 @@
         <!--Registration-->
         <scene sceneID="o4p-SA-1mA">
             <objects>
-                <viewController id="nuO-Wk-42L" customClass="Registration" customModule="CarouSell_test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Registration" id="nuO-Wk-42L" customClass="Registration" customModule="CarouSell_test" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kLa-gt-q3l"/>
                         <viewControllerLayoutGuide type="bottom" id="67C-c7-USL"/>
@@ -18,32 +18,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="iL4-xt-WKH">
-                                <rect key="frame" x="280" y="429" width="39" height="37"/>
+                                <rect key="frame" x="280" y="421" width="39" height="37"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="pageChanged:" destination="nuO-Wk-42L" eventType="valueChanged" id="Hcm-ul-vSR"/>
                                 </connections>
                             </pageControl>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Idk-2z-YVf" customClass="FBSDKLoginButton">
-                                <rect key="frame" x="277" y="474" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YvC-jC-58G">
+                                <rect key="frame" x="190" y="508" width="220" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="SXn-qC-Cof"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <inset key="contentEdgeInsets" minX="6" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="    Sign up or Login Email" image="email">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YvC-jC-58G">
-                                <rect key="frame" x="277" y="512" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="amg-WQ-dey">
-                                <rect key="frame" x="279" y="554" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="執行此註冊步驟，及代表你同意我們的" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="amg-WQ-dey">
+                                <rect key="frame" x="155.5" y="554" width="289" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAO-oc-zmd">
-                                <rect key="frame" x="329" y="550" width="46" height="30"/>
+                                <rect key="frame" x="452.5" y="550" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="o4z-SJ-JUT">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="421.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="413.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="407" id="kb2-3w-Arb"/>
                                 </constraints>
@@ -74,15 +77,19 @@
                                     <outlet property="delegate" destination="nuO-Wk-42L" id="out-CU-p3K"/>
                                 </connections>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Idk-2z-YVf" customClass="FBSDKLoginButton">
+                                <rect key="frame" x="190" y="466" width="220" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="PAO-oc-zmd" firstAttribute="top" secondItem="YvC-jC-58G" secondAttribute="bottom" constant="11" id="0hQ-r5-zbT"/>
                             <constraint firstItem="YvC-jC-58G" firstAttribute="top" secondItem="Idk-2z-YVf" secondAttribute="bottom" constant="8" id="1bm-YY-Wue"/>
+                            <constraint firstItem="YvC-jC-58G" firstAttribute="width" secondItem="Idk-2z-YVf" secondAttribute="width" id="4lt-TX-Rpc"/>
                             <constraint firstItem="iL4-xt-WKH" firstAttribute="centerX" secondItem="lOV-LE-9Jr" secondAttribute="centerX" id="7ic-BL-Vtn"/>
                             <constraint firstItem="iL4-xt-WKH" firstAttribute="top" secondItem="o4z-SJ-JUT" secondAttribute="bottom" constant="8" id="Asy-nk-VrN"/>
                             <constraint firstItem="o4z-SJ-JUT" firstAttribute="top" secondItem="lOV-LE-9Jr" secondAttribute="top" id="Mty-dL-tQO"/>
-                            <constraint firstItem="PAO-oc-zmd" firstAttribute="top" secondItem="YvC-jC-58G" secondAttribute="bottom" constant="11" id="SPN-bS-F9n"/>
                             <constraint firstItem="Idk-2z-YVf" firstAttribute="centerX" secondItem="lOV-LE-9Jr" secondAttribute="centerX" id="eEZ-HD-6Vn"/>
                             <constraint firstItem="amg-WQ-dey" firstAttribute="centerX" secondItem="lOV-LE-9Jr" secondAttribute="centerX" id="hdo-XR-Rnl"/>
                             <constraint firstItem="o4z-SJ-JUT" firstAttribute="leading" secondItem="lOV-LE-9Jr" secondAttribute="leading" id="knP-sy-CHD"/>
@@ -90,22 +97,14 @@
                             <constraint firstItem="PAO-oc-zmd" firstAttribute="baseline" secondItem="amg-WQ-dey" secondAttribute="baseline" id="pVU-zX-mLK"/>
                             <constraint firstAttribute="trailing" secondItem="o4z-SJ-JUT" secondAttribute="trailing" id="q3k-li-HCP"/>
                             <constraint firstItem="PAO-oc-zmd" firstAttribute="leading" secondItem="amg-WQ-dey" secondAttribute="trailing" constant="8" id="qH0-F0-ljP"/>
-                            <constraint firstItem="Idk-2z-YVf" firstAttribute="top" secondItem="iL4-xt-WKH" secondAttribute="bottom" constant="8" id="qVt-qu-Cy9"/>
                             <constraint firstItem="YvC-jC-58G" firstAttribute="centerX" secondItem="lOV-LE-9Jr" secondAttribute="centerX" id="qeC-oD-m3X"/>
                             <constraint firstItem="67C-c7-USL" firstAttribute="top" secondItem="amg-WQ-dey" secondAttribute="bottom" constant="25" id="r62-Gj-7oD"/>
-                            <constraint firstItem="PAO-oc-zmd" firstAttribute="leading" secondItem="amg-WQ-dey" secondAttribute="trailing" constant="19" id="rnA-hB-17p"/>
                             <constraint firstItem="Idk-2z-YVf" firstAttribute="top" secondItem="iL4-xt-WKH" secondAttribute="bottom" constant="8" symbolic="YES" id="tmZ-3s-m78"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="0hQ-r5-zbT"/>
-                                <exclude reference="SPN-bS-F9n"/>
-                                <exclude reference="rnA-hB-17p"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <outlet property="layout" destination="8aJ-tl-tRR" id="Tcb-Hc-5Tt"/>
+                        <outlet property="loginWithEmailButton" destination="YvC-jC-58G" id="8U6-9g-zBI"/>
                         <outlet property="pageControl" destination="iL4-xt-WKH" id="gBU-6q-txx"/>
                         <outlet property="tutorialCollectionView" destination="o4z-SJ-JUT" id="D2K-Si-eIC"/>
                     </connections>
@@ -115,4 +114,7 @@
             <point key="canvasLocation" x="316" y="-564"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="email" width="16" height="16"/>
+    </resources>
 </document>
