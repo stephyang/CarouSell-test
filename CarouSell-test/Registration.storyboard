@@ -17,36 +17,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="iL4-xt-WKH">
-                                <rect key="frame" x="280" y="421" width="39" height="37"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <action selector="pageChanged:" destination="nuO-Wk-42L" eventType="valueChanged" id="Hcm-ul-vSR"/>
-                                </connections>
-                            </pageControl>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YvC-jC-58G">
-                                <rect key="frame" x="190" y="508" width="220" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="SXn-qC-Cof"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <inset key="contentEdgeInsets" minX="6" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="    Sign up or Login Email" image="email">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="執行此註冊步驟，及代表你同意我們的" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="amg-WQ-dey">
-                                <rect key="frame" x="155.5" y="554" width="289" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="執行此註冊步驟，即代表你同意我們的                " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="amg-WQ-dey">
+                                <rect key="frame" x="171" y="561" width="258.5" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAO-oc-zmd">
-                                <rect key="frame" x="452.5" y="550" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="380" y="555" width="48" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="服務條款">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="o4z-SJ-JUT">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="413.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="450"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="407" id="kb2-3w-Arb"/>
                                 </constraints>
@@ -78,28 +63,48 @@
                                 </connections>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Idk-2z-YVf" customClass="FBSDKLoginButton">
-                                <rect key="frame" x="190" y="466" width="220" height="34"/>
+                                <rect key="frame" x="178.5" y="471.5" width="243" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Button"/>
                             </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="iL4-xt-WKH">
+                                <rect key="frame" x="280" y="413" width="39" height="37"/>
+                                <color key="pageIndicatorTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="currentPageIndicatorTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="pageChanged:" destination="nuO-Wk-42L" eventType="valueChanged" id="Hcm-ul-vSR"/>
+                                </connections>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YvC-jC-58G">
+                                <rect key="frame" x="179" y="513.5" width="243" height="34"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="SXn-qC-Cof"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <inset key="contentEdgeInsets" minX="3" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="        Sign up or Login Email       " image="email">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="YvC-jC-58G" firstAttribute="top" secondItem="Idk-2z-YVf" secondAttribute="bottom" constant="8" id="1bm-YY-Wue"/>
                             <constraint firstItem="YvC-jC-58G" firstAttribute="width" secondItem="Idk-2z-YVf" secondAttribute="width" id="4lt-TX-Rpc"/>
-                            <constraint firstItem="iL4-xt-WKH" firstAttribute="centerX" secondItem="lOV-LE-9Jr" secondAttribute="centerX" id="7ic-BL-Vtn"/>
-                            <constraint firstItem="iL4-xt-WKH" firstAttribute="top" secondItem="o4z-SJ-JUT" secondAttribute="bottom" constant="8" id="Asy-nk-VrN"/>
+                            <constraint firstItem="iL4-xt-WKH" firstAttribute="centerX" secondItem="lOV-LE-9Jr" secondAttribute="centerX" id="9vL-hS-isu"/>
                             <constraint firstItem="o4z-SJ-JUT" firstAttribute="top" secondItem="lOV-LE-9Jr" secondAttribute="top" id="Mty-dL-tQO"/>
+                            <constraint firstItem="iL4-xt-WKH" firstAttribute="bottom" secondItem="o4z-SJ-JUT" secondAttribute="bottom" id="dZO-Pf-khn"/>
                             <constraint firstItem="Idk-2z-YVf" firstAttribute="centerX" secondItem="lOV-LE-9Jr" secondAttribute="centerX" id="eEZ-HD-6Vn"/>
                             <constraint firstItem="amg-WQ-dey" firstAttribute="centerX" secondItem="lOV-LE-9Jr" secondAttribute="centerX" id="hdo-XR-Rnl"/>
                             <constraint firstItem="o4z-SJ-JUT" firstAttribute="leading" secondItem="lOV-LE-9Jr" secondAttribute="leading" id="knP-sy-CHD"/>
                             <constraint firstItem="PAO-oc-zmd" firstAttribute="top" secondItem="YvC-jC-58G" secondAttribute="bottom" constant="8" id="mQ9-Qz-8GE"/>
+                            <constraint firstItem="67C-c7-USL" firstAttribute="top" secondItem="o4z-SJ-JUT" secondAttribute="bottom" constant="150" id="pUc-df-Pvf"/>
                             <constraint firstItem="PAO-oc-zmd" firstAttribute="baseline" secondItem="amg-WQ-dey" secondAttribute="baseline" id="pVU-zX-mLK"/>
                             <constraint firstAttribute="trailing" secondItem="o4z-SJ-JUT" secondAttribute="trailing" id="q3k-li-HCP"/>
-                            <constraint firstItem="PAO-oc-zmd" firstAttribute="leading" secondItem="amg-WQ-dey" secondAttribute="trailing" constant="8" id="qH0-F0-ljP"/>
+                            <constraint firstItem="PAO-oc-zmd" firstAttribute="leading" secondItem="amg-WQ-dey" secondAttribute="trailing" constant="-50" id="qH0-F0-ljP"/>
                             <constraint firstItem="YvC-jC-58G" firstAttribute="centerX" secondItem="lOV-LE-9Jr" secondAttribute="centerX" id="qeC-oD-m3X"/>
                             <constraint firstItem="67C-c7-USL" firstAttribute="top" secondItem="amg-WQ-dey" secondAttribute="bottom" constant="25" id="r62-Gj-7oD"/>
-                            <constraint firstItem="Idk-2z-YVf" firstAttribute="top" secondItem="iL4-xt-WKH" secondAttribute="bottom" constant="8" symbolic="YES" id="tmZ-3s-m78"/>
                         </constraints>
                     </view>
                     <connections>

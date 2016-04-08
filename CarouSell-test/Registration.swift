@@ -18,7 +18,7 @@ class Registration: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var loginWithEmailButton: UIButton!
     
     
-    let pages = [[Constants.image: "photo1", Constants.title: "coffee", Constants.description: "I love itI love itI love itI love itI love itI love itI love itI love itI love itI love itI love itI love itI love itI love itI love itI love itI love itI love itI love itI love itI love it"],[Constants.image: "photo2", Constants.title: "work", Constants.description: "I love it"],[Constants.image: "photo3", Constants.title: "latte", Constants.description: "I love it"]]
+    let pages = [[Constants.image: "photo4", Constants.title: "coffee", Constants.description: "I love it"],[Constants.image: "photo5", Constants.title: "work", Constants.description: "I love it"],[Constants.image: "photo6", Constants.title: "latte", Constants.description: "I love it"]]
    
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +26,7 @@ class Registration: UIViewController, UIScrollViewDelegate {
        
         self.tutorialCollectionView.registerNib(UINib(nibName: "PageCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: PageCellreuseIdentifier)
         
-        self.layout.itemSize = CGSize(width: UIScreen.mainScreen().bounds.width, height: UIScreen.mainScreen().bounds.height-200)
+        self.layout.itemSize = CGSize(width: UIScreen.mainScreen().bounds.width, height: UIScreen.mainScreen().bounds.height-150)
         
         
         self.pageControl.numberOfPages = self.pages.count
