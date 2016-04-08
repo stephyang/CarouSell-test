@@ -1,0 +1,6 @@
+framework module Pods_CarouSell_test {
+  umbrella header "Pods-CarouSell-test-umbrella.h"
+
+  export *
+  module * { export * }
+}

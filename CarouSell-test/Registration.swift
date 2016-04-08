@@ -8,18 +8,46 @@
 
 import UIKit
 
-class Registration: UIViewController {
+class Registration: UIViewController, UIScrollViewDelegate {
+    
     private let PageCellreuseIdentifier = "PageCollectionViewCell"
+    
     @IBOutlet weak var tutorialCollectionView: UICollectionView!
+    @IBOutlet weak var layout: UICollectionViewFlowLayout!
+    @IBOutlet weak var pageControl: UIPageControl!
+    
+    let pages = [[Constants.image: "photo1", Constants.title: "coffee", Constants.description: "I love itI love itI love itI love itI love itI love itI love itI love itI love itI love itI love itI love itI love itI love itI love itI love itI love itI love itI love itI love itI love it"],[Constants.image: "photo2", Constants.title: "work", Constants.description: "I love it"],[Constants.image: "photo3", Constants.title: "latte", Constants.description: "I love it"]]
+   
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        // Do any additional setup after loading the view.
        
         self.tutorialCollectionView.registerNib(UINib(nibName: "PageCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: PageCellreuseIdentifier)
-
-        // Do any additional setup after loading the view.
+        
+        self.layout.itemSize = CGSize(width: UIScreen.mainScreen().bounds.width, height: UIScreen.mainScreen().bounds.height-200)
+        
+        
+        self.pageControl.numberOfPages = self.pages.count
+    
+    }
+// 讓每換一個畫面，pagecontrol下面的點會跟著移動（這是UIScrollViewDelegate 的func所以選告UIScrollViewDelegate完直接做）
+// round
+    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+        let pageNum = round(scrollView.contentOffset.x/UIScreen.mainScreen().bounds.width)
+        self.pageControl.currentPage = Int(pageNum)
+    }
+    
+    
+//讓pagecontrol下面的點可以換頁
+    @IBAction func pageChanged(sender: AnyObject) {
+        let x = CGFloat(pageControl.currentPage) * self.tutorialCollectionView.frame.size.width
+        self.tutorialCollectionView.setContentOffset(CGPointMake(x, 0),animated: true)
+        
     }
 
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -34,7 +62,19 @@ class Registration: UIViewController {
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 1
+        return self.pages.count
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(PageCellreuseIdentifier, forIndexPath: indexPath) as! PageCollectionViewCell
+        let page = pages[indexPath.item]
+        
+        cell.pageImageView.image = UIImage(named: page[Constants.image]!)
+        cell.titleLabel.text = page[Constants.title]
+        cell.descriptionLabel.text = page[Constants.description]
+        
+        return cell
+        
     }
     
 
