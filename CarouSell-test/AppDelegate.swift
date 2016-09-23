@@ -20,6 +20,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         NSNotificationCenter.defaultCenter().addObserver(self,selector: #selector(AppDelegate.fbTokenChangeNoti(_:)),name:FBSDKAccessTokenDidChangeNotification, object: nil)
 
+//       改navigationBar 的顏色
+        UINavigationBar.appearance().barTintColor = UIColor.redColor()
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName:UIColor.whiteColor()]
+        
+        
+        
+        
+        
+        
         return FBSDKApplicationDelegate.sharedInstance().application(application,didFinishLaunchingWithOptions: launchOptions)
     
     }

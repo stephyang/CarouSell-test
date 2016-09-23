@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Constants {
+class Constants {
     static let image = "imageName"
     static let title = "title"
     static let description = "description"

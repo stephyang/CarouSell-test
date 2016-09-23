@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RegisterUserTableViewCell" id="KGk-i7-Jjw" customClass="RegisterUserTableViewCell" customModule="CarouSell_test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="使用者名稱" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01g-Gl-taN">
+                        <rect key="frame" x="8" y="11" width="85" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vdb-aI-4R3">
+                        <rect key="frame" x="129.5" y="7" width="182.5" height="30"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="v3o-Fg-ggT">
+                        <rect key="frame" x="101" y="11.5" width="20.5" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="v3o-Fg-ggT" secondAttribute="height" multiplier="1:1" id="Vdr-2Z-cwe"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="v3o-Fg-ggT" firstAttribute="height" secondItem="01g-Gl-taN" secondAttribute="height" id="8RX-yV-7Lx"/>
+                    <constraint firstItem="Vdb-aI-4R3" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="LG6-Wt-Gfh"/>
+                    <constraint firstItem="Vdb-aI-4R3" firstAttribute="leading" secondItem="v3o-Fg-ggT" secondAttribute="trailing" constant="8" id="NYK-dP-Nw5"/>
+                    <constraint firstItem="v3o-Fg-ggT" firstAttribute="leading" secondItem="01g-Gl-taN" secondAttribute="trailing" constant="8" id="Vmd-jD-chG"/>
+                    <constraint firstAttribute="trailing" secondItem="Vdb-aI-4R3" secondAttribute="trailing" constant="8" id="X9H-p4-tg7"/>
+                    <constraint firstItem="01g-Gl-taN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="iFl-fN-BmD"/>
+                    <constraint firstItem="01g-Gl-taN" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="oo5-Lo-Rad"/>
+                    <constraint firstItem="v3o-Fg-ggT" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="pgL-Y4-Rle"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="frontLabel" destination="Vdb-aI-4R3" id="Z8U-5d-kGP"/>
+                <outlet property="iconImage" destination="v3o-Fg-ggT" id="wz0-to-dhG"/>
+                <outlet property="titleLabel" destination="01g-Gl-taN" id="P2P-Km-JQ2"/>
+            </connections>
+            <point key="canvasLocation" x="160" y="217"/>
+        </tableViewCell>
+    </objects>
+</document>

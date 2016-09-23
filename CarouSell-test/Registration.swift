@@ -9,7 +9,7 @@
 import UIKit
 
 class Registration: UIViewController, UIScrollViewDelegate {
-    
+
     private let PageCellreuseIdentifier = "PageCollectionViewCell"
     
     @IBOutlet weak var tutorialCollectionView: UICollectionView!
@@ -27,6 +27,8 @@ class Registration: UIViewController, UIScrollViewDelegate {
         self.tutorialCollectionView.registerNib(UINib(nibName: "PageCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: PageCellreuseIdentifier)
         
         self.layout.itemSize = CGSize(width: UIScreen.mainScreen().bounds.width, height: UIScreen.mainScreen().bounds.height-150)
+        
+    
         
         
         self.pageControl.numberOfPages = self.pages.count
@@ -80,9 +82,14 @@ class Registration: UIViewController, UIScrollViewDelegate {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(PageCellreuseIdentifier, forIndexPath: indexPath) as! PageCollectionViewCell
         let page = pages[indexPath.item]
         
+//        print(pages[indexPath.item])
+        
         cell.pageImageView.image = UIImage(named: page[Constants.image]!)
         cell.titleLabel.text = page[Constants.title]
         cell.descriptionLabel.text = page[Constants.description]
+        
+        
+        print(page[Constants.description])
         
         return cell
         
