@@ -1,5 +1,6 @@
 # CarouSell-test
-Test FB login ,segmentSwitchMode,xib
+* FB login, CollectionView, Segmented Control ,xib
+
 
 
 
