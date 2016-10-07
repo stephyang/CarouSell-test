@@ -23,6 +23,7 @@
             
             tableView.estimatedRowHeight = 150.0
             tableView.rowHeight = UITableViewAutomaticDimension
+            self.title = "註冊"
 
             // Uncomment the following line to preserve selection between presentations
             // self.clearsSelectionOnViewWillAppear = false
@@ -42,8 +43,10 @@
             switch mode {
             case .Register:
                 tableView.reloadData()
+                self.title = "註冊"
             case .SignIn:
                 tableView.reloadData()
+                self.title = "登入"
                 
             
             }
