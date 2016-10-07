@@ -1,5 +1,5 @@
 # CarouSell-test
-* ## FB Login, CollectionView, Segmented Control , TableViewController, Xib
+## FB Login, CollectionView, Segmented Control , TableViewController, Xib
 
 
 
