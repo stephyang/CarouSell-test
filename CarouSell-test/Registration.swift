@@ -18,7 +18,7 @@ class Registration: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var loginWithEmailButton: UIButton!
     
     
-    let pages = [[Constants.image: "photo4", Constants.title: "coffee", Constants.description: "I love it"],[Constants.image: "photo5", Constants.title: "work", Constants.description: "I love it"],[Constants.image: "photo6", Constants.title: "latte", Constants.description: "I love it"]]
+    let pages = [[Constants.image: "photo4", Constants.title: "shell", Constants.description: "I love it"],[Constants.image: "photo5", Constants.title: "plant", Constants.description: "I love it"],[Constants.image: "photo6", Constants.title: "cactus", Constants.description: "I love it"]]
    
     override func viewDidLoad() {
         super.viewDidLoad()
